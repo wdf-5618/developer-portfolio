@@ -1,12 +1,24 @@
 # Developer Portfolio
 
-A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript.
+A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. It now includes two practical application demos alongside the portfolio page.
 
-The purpose is to introduce my background and current learning honestly while I build practical projects and strengthen my software development skills.
+## Projects
 
-## Current status
+### 1. Task Management App
 
-**In progress.** This is an evolving portfolio. The portfolio site itself is the first project listed; additional applications will be added when they are implemented and tested.
+A separate public repository: [task-management-app](https://github.com/wdf-5618/task-management-app). It includes task creation, editing, completion, deletion, search, status filters, sorting, priorities, due dates, and browser-local persistence.
+
+### 2. Stockwise Inventory Manager
+
+A small-shop inventory prototype in `inventory-manager/`. It supports a product catalog, SKU/category tracking, stock adjustments, low-stock and out-of-stock filters, stock-value summaries, and CSV export.
+
+Open `inventory-manager/index.html` directly or run a local server from the repository root:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit [http://localhost:8000/inventory-manager/](http://localhost:8000/inventory-manager/).
 
 ## About me
 
@@ -14,31 +26,24 @@ I graduated from Yadanarbon University with a Bachelor of Science in Mathematics
 
 I am also studying Harvard's CS50 course through YouTube to strengthen my computer science fundamentals.
 
-## Features
+## Technologies used in these projects
+
+- HTML5 and semantic page structure
+- CSS3, responsive layout, and keyboard focus styles
+- Vanilla JavaScript and DOM events
+- Browser `localStorage`
+- CSV export for simple data portability
+
+## Portfolio features
 
 - Responsive page layout for desktop and mobile
-- Navigation with a mobile menu
-- Semantic page sections and a skip-to-content link
-- Skills presented at an honest, current level
-- Project status shown clearly
-- Email contact link
+- Accessible navigation with a mobile menu
+- Semantic sections and a skip-to-content link
+- Skills described at an honest current level
+- Source links for implemented projects
 - Keyboard focus styles and reduced-motion support
 
-## Technologies
-
-- HTML5
-- CSS3
-- JavaScript (vanilla)
-
-## Run locally
-
-No build tools or package installation are required.
-
-1. Clone or download this repository.
-2. Open `index.html` in a browser.
-3. Resize the browser or use its device toolbar to check the mobile navigation and layout.
-
-## Project structure
+## Repository structure
 
 ```text
 developer-portfolio/
@@ -47,25 +52,23 @@ developer-portfolio/
 │   └── style.css
 ├── js/
 │   └── main.js
+├── inventory-manager/
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
 
-## Learning notes
+## Scope and limitations
 
-This project helps me practice:
+The task manager is maintained in its own repository. Stockwise is a standalone front-end demo inside this portfolio repository. Both applications currently store data in the local browser; neither has login, shared cloud storage, or a server-backed database.
 
-- Structuring a page with semantic HTML
-- Creating reusable visual patterns with CSS
-- Making a mobile navigation menu accessible
-- Keeping behavior in a separate JavaScript file
-- Documenting project purpose and status clearly
+The projects are MVP learning prototypes. This update prioritizes implementation; full browser/manual verification has been deferred to save time. The project READMEs describe the current scope and possible next improvements.
 
-Comments are added where they explain behavior or a decision; obvious lines are left uncommented to keep the code readable.
+## Further improvements
 
-## Next steps
-
-- Complete manual checks on mobile and desktop
-- Add screenshots after reviewing the rendered page
-- Build a small task-management application with create, read, update, and delete features
-- Add only completed projects and accurate source links
+- Add a database-backed business application with authentication and tenant-aware access control.
+- Add automated tests and manual browser checks when time allows.
+- Connect a hosted demo after confirming deployment settings.
