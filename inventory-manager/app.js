@@ -77,7 +77,17 @@ function normalizedProduct(record) {
 function loadProducts() {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return [];
+    if (!saved) {
+      // NOTE: Seed a few clearly fictional items on the very first visit so a
+      // reviewer can see meaningful stock states before entering their own data.
+      const now = Date.now();
+      return [
+        { id: "demo-paper", name: "A4 Copy Paper", sku: "PAP-001", category: "Stationery", cost: 3500, quantity: 18, reorderLevel: 6, createdAt: now - 3000, updatedAt: now - 3000 },
+        { id: "demo-water", name: "Bottled Water 600ml", sku: "GRO-014", category: "Groceries", cost: 250, quantity: 4, reorderLevel: 10, createdAt: now - 2000, updatedAt: now - 2000 },
+        { id: "demo-cable", name: "USB-C Charging Cable", sku: "ELE-022", category: "Electronics", cost: 4200, quantity: 0, reorderLevel: 3, createdAt: now - 1000, updatedAt: now - 1000 },
+        { id: "demo-tote", name: "Cotton Tote Bag", sku: "CLO-008", category: "Clothing", cost: 1800, quantity: 14, reorderLevel: 5, createdAt: now, updatedAt: now }
+      ];
+    }
     const parsed = JSON.parse(saved);
     if (!Array.isArray(parsed)) return [];
     return parsed.map(normalizedProduct).filter((product) => product && product.name);
