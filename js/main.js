@@ -11,7 +11,6 @@ function closeNavigation() {
   primaryNavigation.classList.remove("is-open");
 }
 
-// A single listener keeps the mobile menu behavior in one clear place.
 if (navToggle && primaryNavigation) {
   navToggle.addEventListener("click", () => {
     const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
@@ -25,9 +24,11 @@ if (navToggle && primaryNavigation) {
     link.addEventListener("click", closeNavigation);
   });
 
-  // Escape gives keyboard users a quick way to close the open menu.
+  // Escape closes an open menu and returns keyboard focus to its button.
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+
+    if (event.key === "Escape" && isExpanded) {
       closeNavigation();
       navToggle.focus();
     }
