@@ -12,7 +12,7 @@ A task manager with create/edit/complete/delete, search, status filters, sorting
 ### 2. Stockwise Inventory Manager
 Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/stockwise-inventory-manager)
 
-A small-shop inventory prototype with product management, stock adjustments, low-stock alerts, categories, stock-value summaries, and CSV export.
+A small-shop inventory app with product management, stock adjustments, movement history, low-stock alerts, categories, and CSV import/export. A local Node.js server provides SQLite persistence; browser-only mode remains available.
 
 ### 3. Ledgerly Cash Flow Tracker
 Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
@@ -30,8 +30,9 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - HTML5 and semantic page structure
 - CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
-- Browser `localStorage` for local persistence in the small application demos
-- CSV export for simple data portability
+- Browser `localStorage` for Task Management and Ledgerly local persistence
+- Node.js built-in `node:sqlite` and SQLite persistence in Stockwise local-server mode
+- CSV import/export for data portability
 
 ## Portfolio features
 
@@ -67,7 +68,7 @@ developer-portfolio/
 
 ## Scope and limitations
 
-The portfolio links to three separate front-end learning prototypes. The applications do not yet have shared cloud storage, backend databases, or multi-user accounts. Their readmes describe each project's current scope. Full manual browser verification is deferred while implementation is being prioritized.
+The portfolio links to three separate learning projects. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management and Ledgerly remain browser-local prototypes. Each repository README explains its current scope. Full manual browser verification is still pending.
 
 ## Future direction
 
