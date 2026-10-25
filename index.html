@@ -158,31 +158,58 @@
           <p class="eyebrow">Practical work</p>
           <h2 class="section-title" id="projects-title">Projects</h2>
           <p class="section-intro">
-            I am building projects step by step. I will list completed work here with its purpose,
-            features, and what I learned.
+            Small, practical applications built to solve everyday problems and strengthen my web development foundations.
           </p>
         </div>
 
-        <article class="project-card">
-          <div class="project-topline">
-            <span class="project-status"><span aria-hidden="true"></span> In progress</span>
-            <span class="project-type">Personal website</span>
-          </div>
-          <h3>Developer Portfolio</h3>
-          <p>
-            A personal website to introduce my background, current learning, and future practical
-            projects. This is an ongoing project that I am improving as I learn.
-          </p>
-          <ul class="tag-list" aria-label="Portfolio technologies">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <a class="text-link" href="https://github.com/wdf-5618/developer-portfolio" target="_blank" rel="noreferrer">
-            View source on GitHub <span aria-hidden="true">↗</span>
-          </a>
-        </article>
-        <p class="projects-note">Next planned project: a task manager for creating, updating, completing, and organizing tasks.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-status"><span aria-hidden="true"></span> In progress</span>
+              <span class="project-type">Personal website</span>
+            </div>
+            <h3>Developer Portfolio</h3>
+            <p>A responsive portfolio introducing my background, current learning, and practical work as I continue to improve.</p>
+            <ul class="tag-list" aria-label="Portfolio technologies">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/wdf-5618/developer-portfolio" target="_blank" rel="noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-status project-status-ready"><span aria-hidden="true"></span> MVP built</span>
+              <span class="project-type">Task management</span>
+            </div>
+            <h3>Task Management App</h3>
+            <p>A local-first task manager with create, edit, complete, delete, search, status filters, sorting, priorities, due dates, and browser persistence.</p>
+            <ul class="tag-list" aria-label="Task manager technologies">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>localStorage</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/wdf-5618/task-management-app" target="_blank" rel="noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-status project-status-ready"><span aria-hidden="true"></span> MVP built</span>
+              <span class="project-type">Small-business tools</span>
+            </div>
+            <h3>Stockwise Inventory Manager</h3>
+            <p>A browser-based inventory prototype for small shops. Manage products, adjust stock, identify low inventory, calculate stock value, and export CSV.</p>
+            <ul class="tag-list" aria-label="Stockwise technologies">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>CSV export</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="inventory-manager/index.html">Open app page <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/wdf-5618/developer-portfolio/tree/main/inventory-manager" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="projects-note">These are learning prototypes. They use browser-local storage and are not yet connected to a shared backend.</p>
       </div>
     </section>
 
