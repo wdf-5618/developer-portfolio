@@ -1,33 +1,23 @@
 # Developer Portfolio
 
-A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. The repository includes the portfolio page and three separate practical application demos.
+A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. This repository contains the portfolio website only; each application is maintained in its own repository.
 
-## Practical applications
+## Projects
 
 ### 1. Task Management App
-Repository: [task-management-app](https://github.com/wdf-5618/task-management-app)
+Repository: [wdf-5618/task-management-app](https://github.com/wdf-5618/task-management-app)
 
-Manage tasks using create/edit/complete/delete, search, status filters, sorting, priorities, due dates, and browser-local persistence.
+A task manager with create/edit/complete/delete, search, status filters, sorting, priorities, due dates, and browser-local persistence.
 
 ### 2. Stockwise Inventory Manager
-App folder: [inventory-manager/](inventory-manager/)
+Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/stockwise-inventory-manager)
 
-A small-shop inventory prototype with product create/edit/delete, stock adjustment, low-stock alerts, categories, inventory-value summaries, and CSV export.
+A small-shop inventory prototype with product management, stock adjustments, low-stock alerts, categories, stock-value summaries, and CSV export.
 
 ### 3. Ledgerly Cash Flow Tracker
-App folder: [cashflow-tracker/](cashflow-tracker/)
+Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
 
-A simple monthly income-and-expense tracker with categories, transaction search and filters, monthly totals, net cash flow, and CSV export.
-
-To open either standalone app, navigate to its `index.html`. You can also run a local server from the repository root:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit:
-- [Stockwise](http://localhost:8000/inventory-manager/)
-- [Ledgerly](http://localhost:8000/cashflow-tracker/)
+A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
 
 ## About me
 
@@ -38,9 +28,9 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 ## Technologies used
 
 - HTML5 and semantic page structure
-- CSS3, responsive layout, and keyboard focus styles
+- CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
-- Browser `localStorage` for local persistence
+- Browser `localStorage` for local persistence in the small application demos
 - CSV export for simple data portability
 
 ## Portfolio features
@@ -49,8 +39,18 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - Accessible navigation with a mobile menu
 - Semantic sections and a skip-to-content link
 - Skills described at an honest current level
-- Source links for practical applications
+- Dedicated repository links for each practical app
 - Keyboard focus styles and reduced-motion support
+
+## Run the portfolio locally
+
+No build tools or package installation are needed. Open `index.html` in a browser, or run a small server from this repository root:
+
+```bash
+python -m http.server 8000
+```
+
+Then open [http://localhost:8000/](http://localhost:8000/).
 
 ## Repository structure
 
@@ -61,28 +61,14 @@ developer-portfolio/
 │   └── style.css
 ├── js/
 │   └── main.js
-├── inventory-manager/
-│   ├── index.html
-│   ├── styles.css
-│   ├── app.js
-│   └── README.md
-├── cashflow-tracker/
-│   ├── index.html
-│   ├── styles.css
-│   ├── app.js
-│   └── README.md
 ├── README.md
 └── .gitignore
 ```
 
 ## Scope and limitations
 
-The three applications are front-end learning prototypes. Task management is in its own public repository; Stockwise and Ledgerly are standalone folders in this repository. Their records are stored in the current browser profile; they do not yet have shared cloud storage, user accounts, or backend databases.
+The portfolio links to three separate front-end learning prototypes. The applications do not yet have shared cloud storage, backend databases, or multi-user accounts. Their readmes describe each project's current scope. Full manual browser verification is deferred while implementation is being prioritized.
 
-Work is being prioritized toward building, as requested. Full browser/manual verification has been deferred; the project READMEs explain the current scope and limitations.
+## Future direction
 
-## Further improvements
-
-- Build a database-backed application with authentication and tenant-aware access control.
-- Add automated tests and browser checks when time allows.
-- Connect hosted demos after confirming deployment settings.
+The next major development effort is a database-backed business application with authentication, business-specific data access, and clear authorization boundaries.
