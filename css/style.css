@@ -1,0 +1,21 @@
+/*
+  Basic portfolio styles.
+  This first version focuses on clean structure.
+  We will improve the design after adding more sections.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+header, section {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
