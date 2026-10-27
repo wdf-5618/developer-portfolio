@@ -2,45 +2,47 @@
 
 A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. This repository contains the portfolio website only. Each practical application is maintained in its own repository.
 
+**Live portfolio:** [Open the portfolio](https://developer-portfolio-gilt-theta.vercel.app)
+
 ## Projects
 
 ### 1. Task Management App
-Repository: [wdf-5618/task-management-app](https://github.com/wdf-5618/task-management-app)
+Repository: [wdf-5618/task-management-app](https://github.com/wdf-5618/task-management-app) · [Live demo](https://task-management-app-pi-murex.vercel.app)
 
 A task manager with create/edit/complete/delete, search, status filters, sorting, priorities, due dates, and browser-local persistence.
 
 ### 2. Stockwise Inventory Manager
-Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/stockwise-inventory-manager)
+Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/stockwise-inventory-manager) · [Live demo](https://stockwise-inventory-manager-six.vercel.app)
 
-A small-shop inventory app with product management, stock adjustments, movement history, low-stock alerts, categories, and CSV import/export. A local Node.js server provides SQLite persistence; browser-only mode remains available.
+A small-shop inventory app with product management, stock adjustments, movement history, low-stock alerts, categories, and CSV import/export. The hosted demo uses browser-only storage; running the local Node.js server adds SQLite persistence.
 
 ### 3. ServiceSlot
-Repository: [wdf-5618/serviceslot](https://github.com/wdf-5618/serviceslot) · [Live demo](https://serviceslot-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/serviceslot](https://github.com/wdf-5618/serviceslot) · [Live demo](https://serviceslot.vercel.app)
 
 An appointment-request demo built with React and Bootstrap. Customers can select a service, date, and time, then submit a request for a local queue. The demo does not contact a real business or reserve a shared calendar.
 
 ### 4. ClientBrief
-Repository: [wdf-5618/client-brief](https://github.com/wdf-5618/client-brief) · [Live demo](https://client-brief-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/client-brief](https://github.com/wdf-5618/client-brief) · [Live demo](https://client-brief-liard.vercel.app)
 
 A client/project intake form that turns project goals, deliverables, requirements, budget, and timing into a structured brief. It supports browser-local drafts, copy, JSON export, and print/PDF; it does not submit information to a server.
 
 ### 5. HelpDesk Lite
-Repository: [wdf-5618/helpdesk-lite](https://github.com/wdf-5618/helpdesk-lite) · [Live demo](https://helpdesk-lite-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/helpdesk-lite](https://github.com/wdf-5618/helpdesk-lite) · [Live demo](https://helpdesk-lite-theta.vercel.app)
 
 A small-business support queue for customer issues, priorities, assignees, status changes, and activity notes. The demo is stored in the current browser and does not send customer notifications.
 
 ### 6. FeedbackPulse
-Repository: [wdf-5618/feedback-pulse](https://github.com/wdf-5618/feedback-pulse) · [Live demo](https://feedback-pulse-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/feedback-pulse](https://github.com/wdf-5618/feedback-pulse) · [Live demo](https://feedback-pulse-blond.vercel.app)
 
 A customer feedback dashboard for rating averages, rating distribution, category summaries, and follow-up on low scores. Sentiment labels use simple rating thresholds rather than AI analysis; all responses remain in the current browser.
 
 ### 7. QuickQuote
-Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Live demo](https://quickquote-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Live demo](https://quickquote-chi.vercel.app)
 
 A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
 
 ### 8. Ledgerly Cash Flow Tracker
-Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker) · [Live demo](https://ledgerly-cashflow-tracker-wdf-5618s-projects.vercel.app)
+Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker) · [Live demo](https://ledgerly-cashflow-tracker.vercel.app)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
 
