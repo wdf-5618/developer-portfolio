@@ -29,12 +29,17 @@ Repository: [wdf-5618/helpdesk-lite](https://github.com/wdf-5618/helpdesk-lite) 
 
 A small-business support queue for customer issues, priorities, assignees, status changes, and activity notes. The demo is stored in the current browser and does not send customer notifications.
 
-### 6. QuickQuote
+### 6. FeedbackPulse
+Repository: [wdf-5618/feedback-pulse](https://github.com/wdf-5618/feedback-pulse) · [Live demo](https://feedback-pulse-wdf-5618s-projects.vercel.app)
+
+A customer feedback dashboard for rating averages, rating distribution, category summaries, and follow-up on low scores. Sentiment labels use simple rating thresholds rather than AI analysis; all responses remain in the current browser.
+
+### 7. QuickQuote
 Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Live demo](https://quickquote-wdf-5618s-projects.vercel.app)
 
 A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
 
-### 7. Ledgerly Cash Flow Tracker
+### 8. Ledgerly Cash Flow Tracker
 Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
@@ -50,9 +55,9 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - HTML5 and semantic page structure
 - CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
-- Bootstrap 5 and vanilla JavaScript in the separate QuickQuote, ClientBrief, and HelpDesk Lite apps
+- Bootstrap 5 and vanilla JavaScript in the separate QuickQuote, ClientBrief, HelpDesk Lite, and FeedbackPulse apps
 - React, Bootstrap 5, and Vite in the separate ServiceSlot app
-- Browser localStorage for Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, and HelpDesk Lite local persistence
+- Browser localStorage for Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse local persistence
 - Node.js built-in node:sqlite and SQLite persistence in Stockwise local-server mode
 - CSV import/export for data portability
 
@@ -90,7 +95,7 @@ developer-portfolio/
 
 ## Scope and limitations
 
-The portfolio links to seven separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, and HelpDesk Lite are browser-local prototypes. Each README explains the current scope. Manual interaction tests have been performed for the recent ClientBrief MVP; full browser verification of every app remains pending.
+The portfolio links to eight separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse are browser-local prototypes. Each README explains the current scope. Headless browser smoke tests have been performed for ClientBrief, HelpDesk Lite, and FeedbackPulse. Full browser verification of every app remains pending.
 
 ## Future direction
 
