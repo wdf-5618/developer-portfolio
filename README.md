@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. This repository contains the portfolio website only; each application is maintained in its own repository.
+A personal portfolio website for **THET PAING SOE**, built with plain HTML, CSS, and JavaScript. This repository contains the portfolio website, and it also includes one small learning demo (`quickquote/`) for business quotation practice.
 
 ## Projects
 
@@ -14,7 +14,12 @@ Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/s
 
 A small-shop inventory app with product management, stock adjustments, movement history, low-stock alerts, categories, and CSV import/export. A local Node.js server provides SQLite persistence; browser-only mode remains available.
 
-### 3. Ledgerly Cash Flow Tracker
+### 3. QuickQuote
+Folder: [`quickquote/`](quickquote/)
+
+A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
+
+### 4. Ledgerly Cash Flow Tracker
 Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
@@ -30,6 +35,7 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - HTML5 and semantic page structure
 - CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
+- Bootstrap for the QuickQuote learning demo
 - Browser `localStorage` for Task Management and Ledgerly local persistence
 - Node.js built-in `node:sqlite` and SQLite persistence in Stockwise local-server mode
 - CSV import/export for data portability
@@ -62,13 +68,18 @@ developer-portfolio/
 │   └── style.css
 ├── js/
 │   └── main.js
+├── quickquote/
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
 
 ## Scope and limitations
 
-The portfolio links to three separate learning projects. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management and Ledgerly remain browser-local prototypes. Each repository README explains its current scope. Full manual browser verification is still pending.
+The portfolio links to three separate learning projects and one in-repo learning demo. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management and Ledgerly remain browser-local prototypes. QuickQuote is a single-browser quotation prototype for small business practice. Each README explains the current scope. Full manual browser verification is still pending.
 
 ## Future direction
 
