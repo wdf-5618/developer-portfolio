@@ -44,6 +44,11 @@ Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/led
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
 
+### 9. ShiftBoard Lite
+Repository: [wdf-5618/shiftboard-lite](https://github.com/wdf-5618/shiftboard-lite) · [Live demo](https://shiftboard-lite.vercel.app/)
+
+A weekly staff-scheduling workspace built with React and Tailwind CSS. It uses Supabase Auth and PostgreSQL for private per-account workspaces, staff rosters, and shifts, with row-level security and database-side overlapping-shift validation.
+
 ## About me
 
 I graduated from Yadanarbon University with a Bachelor of Science in Mathematics. I built a foundation in web development through online courses and self-study, and I continue learning from frontend to backend.
@@ -57,6 +62,8 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - Vanilla JavaScript and DOM events
 - Bootstrap 5 and vanilla JavaScript in the separate QuickQuote, ClientBrief, HelpDesk Lite, and FeedbackPulse apps
 - React, Bootstrap 5, and Vite in the separate ServiceSlot app
+- React, Tailwind CSS 4, and Vite in ShiftBoard Lite
+- Supabase Auth, PostgreSQL, and row-level security (RLS) for ShiftBoard Lite workspace data
 - Browser localStorage for Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse local persistence
 - Node.js built-in node:sqlite and SQLite persistence in Stockwise local-server mode
 - CSV import/export for data portability
@@ -95,8 +102,8 @@ developer-portfolio/
 
 ## Scope and limitations
 
-The portfolio links to eight separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse are browser-local prototypes. Each README explains the current scope. Headless browser smoke tests have been performed for ClientBrief, HelpDesk Lite, and FeedbackPulse. Full browser verification of every app remains pending.
+The portfolio links to nine separately maintained learning apps. ShiftBoard Lite is the first app in this portfolio using a hosted database and authentication: Supabase Auth with PostgreSQL tables protected by row-level security. Its sign-in, workspace loading, and CRUD flows still require full end-to-end verification with a real test account. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse are browser-local prototypes. Each README explains the current scope. Headless browser smoke tests have been performed for ClientBrief, HelpDesk Lite, and FeedbackPulse. Full browser verification of every app remains pending.
 
 ## Future direction
 
-The next major development effort is a database-backed business application with authentication, business-specific data access, and clear authorization boundaries.
+Next steps for ShiftBoard Lite are to complete end-to-end tests with a separate test account, verify the Supabase Auth site and redirect URL settings, and refine the workspace experience. Further projects can build on the same database, authentication, and authorization fundamentals.
