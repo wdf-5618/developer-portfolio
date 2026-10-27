@@ -19,12 +19,17 @@ Repository: [wdf-5618/serviceslot](https://github.com/wdf-5618/serviceslot) · [
 
 An appointment-request demo built with React and Bootstrap. Customers can select a service, date, and time, then submit a request for a local queue. The demo does not contact a real business or reserve a shared calendar.
 
-### 4. QuickQuote
+### 4. ClientBrief
+Repository: [wdf-5618/client-brief](https://github.com/wdf-5618/client-brief) · [Live demo](https://client-brief-wdf-5618s-projects.vercel.app)
+
+A client/project intake form that turns project goals, deliverables, requirements, budget, and timing into a structured brief. It supports browser-local drafts, copy, JSON export, and print/PDF; it does not submit information to a server.
+
+### 5. QuickQuote
 Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Live demo](https://quickquote-wdf-5618s-projects.vercel.app)
 
 A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
 
-### 5. Ledgerly Cash Flow Tracker
+### 6. Ledgerly Cash Flow Tracker
 Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
@@ -40,10 +45,10 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - HTML5 and semantic page structure
 - CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
-- Bootstrap 5 and vanilla JavaScript in the separate QuickQuote app
+- Bootstrap 5 and vanilla JavaScript in the separate QuickQuote and ClientBrief apps
 - React, Bootstrap 5, and Vite in the separate ServiceSlot app
-- Browser `localStorage` for Task Management and Ledgerly local persistence
-- Node.js built-in `node:sqlite` and SQLite persistence in Stockwise local-server mode
+- Browser localStorage for Task Management, Ledgerly, QuickQuote, and ClientBrief local persistence
+- Node.js built-in node:sqlite and SQLite persistence in Stockwise local-server mode
 - CSV import/export for data portability
 
 ## Portfolio features
@@ -57,17 +62,17 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 
 ## Run the portfolio locally
 
-No build tools or package installation are needed. Open `index.html` in a browser, or run a small server from this repository root:
+No build tools or package installation are needed. Open index.html in a browser, or run a small server from this repository root:
 
-```bash
+~~~bash
 python -m http.server 8000
-```
+~~~
 
 Then open [http://localhost:8000/](http://localhost:8000/).
 
 ## Repository structure
 
-```text
+~~~text
 developer-portfolio/
 ├── index.html
 ├── css/
@@ -76,11 +81,11 @@ developer-portfolio/
 │   └── main.js
 ├── README.md
 └── .gitignore
-```
+~~~
 
 ## Scope and limitations
 
-The portfolio links to five separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, and ServiceSlot are browser-local prototypes. Each README explains the current scope. Full manual browser verification is still pending.
+The portfolio links to six separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, ClientBrief, and ServiceSlot are browser-local prototypes. Each README explains the current scope. Manual interaction tests have been performed for the recent ClientBrief MVP; full browser verification of every app remains pending.
 
 ## Future direction
 
