@@ -40,7 +40,7 @@ Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Li
 A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
 
 ### 8. Ledgerly Cash Flow Tracker
-Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
+Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker) · [Live demo](https://ledgerly-cashflow-tracker-wdf-5618s-projects.vercel.app)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
 
@@ -102,8 +102,8 @@ developer-portfolio/
 
 ## Scope and limitations
 
-The portfolio links to nine separately maintained learning apps. ShiftBoard Lite is the first app in this portfolio using a hosted database and authentication: Supabase Auth with PostgreSQL tables protected by row-level security. Its sign-in, workspace loading, and CRUD flows still require full end-to-end verification with a real test account. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse are browser-local prototypes. Each README explains the current scope. Headless browser smoke tests have been performed for ClientBrief, HelpDesk Lite, and FeedbackPulse. Full browser verification of every app remains pending.
+The portfolio links to nine separately maintained learning apps. ShiftBoard Lite is the first app in this portfolio using a hosted database and authentication: Supabase Auth with PostgreSQL tables protected by row-level security. Its production signup, email-confirmation redirect, sign-in, and persisted workspace flow have been manually verified with a test account. Broader automated tests, cross-browser coverage, and a two-account check of workspace isolation remain to be completed. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend. Task Management, Ledgerly, QuickQuote, ClientBrief, ServiceSlot, HelpDesk Lite, and FeedbackPulse are browser-local prototypes. Each README explains the current scope. Headless browser smoke tests have been performed for ClientBrief, HelpDesk Lite, and FeedbackPulse. Full browser verification of every app remains pending.
 
 ## Future direction
 
-Next steps for ShiftBoard Lite are to complete end-to-end tests with a separate test account, verify the Supabase Auth site and redirect URL settings, and refine the workspace experience. Further projects can build on the same database, authentication, and authorization fundamentals.
+Next steps for ShiftBoard Lite are to add repeatable automated tests, check workspace isolation with two separate accounts, and refine the workspace experience. Further projects can build on the same database, authentication, and authorization fundamentals.
