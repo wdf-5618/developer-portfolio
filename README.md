@@ -14,12 +14,17 @@ Repository: [wdf-5618/stockwise-inventory-manager](https://github.com/wdf-5618/s
 
 A small-shop inventory app with product management, stock adjustments, movement history, low-stock alerts, categories, and CSV import/export. A local Node.js server provides SQLite persistence; browser-only mode remains available.
 
-### 3. QuickQuote
+### 3. ServiceSlot
+Repository: [wdf-5618/serviceslot](https://github.com/wdf-5618/serviceslot) · [Live demo](https://serviceslot-wdf-5618s-projects.vercel.app)
+
+An appointment-request demo built with React and Bootstrap. Customers can select a service, date, and time, then submit a request for a local queue. The demo does not contact a real business or reserve a shared calendar.
+
+### 4. QuickQuote
 Repository: [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote) · [Live demo](https://quickquote-wdf-5618s-projects.vercel.app)
 
 A quotation and estimate builder for small businesses and freelancers. Add line items, calculate totals, apply discount or tax, and print a customer-ready estimate.
 
-### 4. Ledgerly Cash Flow Tracker
+### 5. Ledgerly Cash Flow Tracker
 Repository: [wdf-5618/ledgerly-cashflow-tracker](https://github.com/wdf-5618/ledgerly-cashflow-tracker)
 
 A monthly income-and-expense tracker with transaction management, category filters, monthly totals, net cash flow, and CSV export.
@@ -36,6 +41,7 @@ I am also studying Harvard's CS50 course through YouTube to strengthen my comput
 - CSS3 and responsive layouts
 - Vanilla JavaScript and DOM events
 - Bootstrap 5 and vanilla JavaScript in the separate QuickQuote app
+- React, Bootstrap 5, and Vite in the separate ServiceSlot app
 - Browser `localStorage` for Task Management and Ledgerly local persistence
 - Node.js built-in `node:sqlite` and SQLite persistence in Stockwise local-server mode
 - CSV import/export for data portability
@@ -74,7 +80,7 @@ developer-portfolio/
 
 ## Scope and limitations
 
-The portfolio links to four separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, and QuickQuote are browser-local prototypes. Each README explains the current scope. Full manual browser verification is still pending.
+The portfolio links to five separately maintained learning apps. Stockwise has a local SQLite-backed server mode, but it is not deployed as a hosted backend and does not provide shared cloud storage or multi-user accounts. Task Management, Ledgerly, QuickQuote, and ServiceSlot are browser-local prototypes. Each README explains the current scope. Full manual browser verification is still pending.
 
 ## Future direction
 
